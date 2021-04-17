@@ -11,7 +11,6 @@ export enum Paths {
   ROOT = '',
   SIGN_IN = 'sign-in',
   REGISTER = 'register-user',
-  DASHBOARD = 'dashboard',
   FORGOT_PASSWORD = 'forgot-password',
   VERIFY_EMAIL = 'verify-email-address',
   CANVAS = 'canvas'

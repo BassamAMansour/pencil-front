@@ -24,16 +24,18 @@ export class AuthService {
       if (user) {
         this.userData = user;
         localStorage.setItem('user', JSON.stringify(this.userData));
+        this.ngZone.run(() => {
+          this.router.navigate([Paths.CANVAS]);
+        });
       } else {
         localStorage.removeItem('user');
       }
-      JSON.parse(localStorage.getItem('user') || '')
     })
   }
 
   get isLoggedIn(): boolean {
-    const user = JSON.parse(localStorage.getItem('user') || '');
-    return (user !== null && user.emailVerified !== false);
+    const userJson = localStorage.getItem('user')
+    return userJson && JSON.parse(userJson).emailVerified
   }
 
   SignIn = (email: string, password: string) =>
@@ -75,10 +77,10 @@ export class AuthService {
   AuthLogin = (provider: any) =>
     this.afAuth.signInWithPopup(provider)
       .then((result: UserCredential) => {
+        this.SetUserData(result.user);
         this.ngZone.run(() => {
           this.router.navigate([Paths.CANVAS]);
         })
-        this.SetUserData(result.user);
       }).catch((error: Error) => {
       window.alert(error)
     });
