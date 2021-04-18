@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, NgZone, OnInit} from '@angular/core';
+import {Component, NgZone, OnInit} from '@angular/core';
 import {fabric} from 'fabric';
 import {Canvas} from "fabric/fabric-impl";
 import {FabricService} from "../../shared/services/fabric.service";
@@ -9,14 +9,10 @@ import {FabricService} from "../../shared/services/fabric.service";
   templateUrl: './canvas.component.html',
   styleUrls: ['./canvas.component.css']
 })
-export class CanvasComponent implements OnInit, AfterViewInit {
+export class CanvasComponent implements OnInit {
   private canvas: Canvas = new fabric.Canvas('fabricSurface');
 
   constructor(public fabricService: FabricService, private zone: NgZone) {
-  }
-
-  async ngAfterViewInit(): Promise<void> {
-
   }
 
   async ngOnInit(): Promise<void> {

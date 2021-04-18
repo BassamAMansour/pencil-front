@@ -10,7 +10,7 @@ import {first} from "rxjs/operators";
 export class FabricService {
   public canvas?: Canvas;
 
-  constructor(public afs: AngularFirestore, public afAuth: AngularFireAuth,) {
+  constructor(public afs: AngularFirestore, public afAuth: AngularFireAuth) {
   }
 
   async SaveCanvas() {
