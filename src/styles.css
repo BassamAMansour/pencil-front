@@ -65,7 +65,7 @@ h6 {
   display: table;
   width: 100%;
   height: 100%;
-  background: #3F51B5;
+  background: #7e5f5f;
 }
 
 .displayTableCell {
@@ -141,7 +141,7 @@ input:-moz-placeholder {
   font-size: 16px;
   font-weight: 600;
   padding: 15px 0;
-  background: #15CD72;
+  background: #1568cd;
   color: #ffffff;
   cursor: pointer;
   outline: none;
@@ -157,11 +157,7 @@ input:-moz-placeholder {
 }
 
 .displayTable .googleBtn {
-  background: #eb5e4c;
-}
-
-.displayTable .facebookBtn {
-  background: #5d82d1;
+  background: #ff1c00;
 }
 
 .or {
@@ -170,7 +166,7 @@ input:-moz-placeholder {
   color: #a0a0a0;
   background: white;
   position: relative;
-  margin: 5px 0 0px;
+  margin: 5px 0 0;
 }
 
 .orInner {
@@ -211,7 +207,7 @@ input:-moz-placeholder {
 }
 
 .forgotPassword span {
-  color: #3C89EF;
+  color: #ef3c57;
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
@@ -244,7 +240,7 @@ input:-moz-placeholder {
   /* Behind the navbar */
   padding: 48px 0 0;
   /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-sticky {
@@ -288,7 +284,7 @@ input:-moz-placeholder {
 .sidebar a:hover,
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
-  color: #E91E63;
+  color: #0071ff;
   background: #efefef;
 }
 
@@ -341,7 +337,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .bg-dark {
-  background-color: #3F51B5 !important;
+  background-color: #b5603f !important;
 }
 
 .gap-right {
@@ -363,11 +359,11 @@ i {
 }
 
 .action-block .fa-edit:hover {
-  color: #009688;
+  color: #96008f;
 }
 
 .action-block .fa-trash-alt:hover {
-  color: #E91E63;
+  color: #73e91e;
 }
 
 .btn-primary.focus,
@@ -389,7 +385,7 @@ body .ngx-pagination li:last-child {
 }
 
 body .ngx-pagination .current {
-  background: #055AF9;
+  background: #f9052a;
 }
 
 .ngx-pagination a:hover,
@@ -399,7 +395,7 @@ body .ngx-pagination .current {
 
 /* Error */
 .error {
-  color: red;
+  color: #ff0000;
   margin-top: 5px;
 }
 

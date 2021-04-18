@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/pencil-front",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
